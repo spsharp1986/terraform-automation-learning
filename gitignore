@@ -1,0 +1,23 @@
+# Downloaded Terraform providers and modules
+**/.terraform/*
+
+# State files may contain sensitive information
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+
+# Saved plans and crash logs
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+
+# Local variable values and credentials
+*.tfvars
+*.tfvars.json
+.env
+.env.*
+*.pem
+*.key
+*accessKeys.csv
+credentials.tfrc.json
