@@ -1,0 +1,7 @@
+# Generated providers/modules and local Git metadata are not course evidence.
+.terraform/
+# Future local credentials must never be committed.
+.env
+*.pem
+*.key
+credentials
