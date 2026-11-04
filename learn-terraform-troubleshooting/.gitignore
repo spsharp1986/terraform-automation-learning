@@ -1,0 +1,23 @@
+# Terraform local cache, state, plans and private values
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.tfplan
+*tfplan*
+*.plan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+credentials.tfrc.json
+.env
+.env.*
+.aws/
+*.pem
+*.key
