@@ -1,0 +1,47 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Local variable files may contain sensitive or environment-specific values.
+*.tfvars
+*.tfvars.json
+*.tvars
+*.tvars.json
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include override files you do wish to add to version control using negated pattern
+#
+# !example_override.tf
+
+# Saved plans, including the extensionless name used in this exercise
+*.tfplan
+*.tfplan.*
+tfplan
+tfplan-*
+/variables
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+credentials.tfrc.json
+
+# Local credentials and environment files
+.aws/
+.env
+.env.*
+*.pem
+*.key
+*accessKeys.csv
