@@ -1,0 +1,28 @@
+{
+  "terraform_version": "1.16.6",
+  "resource_changes": [
+    {
+      "resource_type": "aws_instance",
+      "actions": [
+        "no-op"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "random_pet",
+      "actions": [
+        "delete",
+        "create"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "random_pet",
+      "actions": [
+        "no-op"
+      ],
+      "count": 2
+    }
+  ],
+  "output_changes": {}
+}

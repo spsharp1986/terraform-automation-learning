@@ -1,0 +1,35 @@
+{
+  "terraform_version": "1.17.1",
+  "resource_changes": [
+    {
+      "resource_type": "aws_instance",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "random_pet",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    }
+  ],
+  "output_changes": {
+    "application_url": {
+      "actions": [
+        "create"
+      ],
+      "sensitive": false,
+      "value": "[REDACTED]"
+    },
+    "domain_name": {
+      "actions": [
+        "create"
+      ],
+      "sensitive": false,
+      "value": "[REDACTED]"
+    }
+  }
+}

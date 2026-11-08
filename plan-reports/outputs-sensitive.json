@@ -1,0 +1,175 @@
+{
+  "terraform_version": "1.17.1",
+  "resource_changes": [
+    {
+      "resource_type": "aws_db_instance",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "aws_db_subnet_group",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "aws_default_network_acl",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "aws_default_route_table",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "aws_default_security_group",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "aws_eip",
+      "actions": [
+        "create"
+      ],
+      "count": 2
+    },
+    {
+      "resource_type": "aws_elb",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "aws_elb_attachment",
+      "actions": [
+        "create"
+      ],
+      "count": 4
+    },
+    {
+      "resource_type": "aws_instance",
+      "actions": [
+        "create"
+      ],
+      "count": 4
+    },
+    {
+      "resource_type": "aws_internet_gateway",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "aws_nat_gateway",
+      "actions": [
+        "create"
+      ],
+      "count": 2
+    },
+    {
+      "resource_type": "aws_route",
+      "actions": [
+        "create"
+      ],
+      "count": 3
+    },
+    {
+      "resource_type": "aws_route_table",
+      "actions": [
+        "create"
+      ],
+      "count": 3
+    },
+    {
+      "resource_type": "aws_route_table_association",
+      "actions": [
+        "create"
+      ],
+      "count": 4
+    },
+    {
+      "resource_type": "aws_security_group",
+      "actions": [
+        "create"
+      ],
+      "count": 2
+    },
+    {
+      "resource_type": "aws_security_group_rule",
+      "actions": [
+        "create"
+      ],
+      "count": 12
+    },
+    {
+      "resource_type": "aws_subnet",
+      "actions": [
+        "create"
+      ],
+      "count": 4
+    },
+    {
+      "resource_type": "aws_vpc",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "random_string",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    }
+  ],
+  "output_changes": {
+    "db_password": {
+      "actions": [
+        "create"
+      ],
+      "sensitive": true,
+      "value": "[REDACTED]"
+    },
+    "db_username": {
+      "actions": [
+        "create"
+      ],
+      "sensitive": true,
+      "value": "[REDACTED]"
+    },
+    "lb_url": {
+      "actions": [
+        "create"
+      ],
+      "sensitive": false,
+      "value": "[REDACTED]"
+    },
+    "vpc_id": {
+      "actions": [
+        "create"
+      ],
+      "sensitive": false,
+      "value": "[REDACTED]"
+    },
+    "web_server_count": {
+      "actions": [
+        "create"
+      ],
+      "sensitive": false,
+      "value": "[REDACTED]"
+    }
+  }
+}

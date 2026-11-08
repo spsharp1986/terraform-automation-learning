@@ -13,6 +13,8 @@ Terraform course exercises:
 
 The init and plan folders are sanitized learning snapshots. Use a separate HCP Terraform workspace and replace any placeholder settings before running the exercises. Keep credentials, local variable values, state, saved plans, and JSON plan exports out of Git.
 
+[Redacted plan reports](plan-reports/README.md) record the planned resource actions and output changes from the exercises.
+
 Practical Terraform learning projects, with their validation results and limitations documented.
 
 - [AWS getting started](aws-getting-started/README.md): EC2/VPC fundamentals, variables, modules and HCP Terraform.
