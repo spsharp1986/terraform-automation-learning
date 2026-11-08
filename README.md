@@ -1,15 +1,16 @@
 # terraform-automation-learning
 
-
 Terraform course exercises:
 
 - [AWS getting started](aws-getting-started/README.md)
 - [Initialize Terraform](learn-terraform-init/README.md) — [export notes](learn-terraform-init/EXPORT-NOTES.md)
 - [Create a Terraform plan](learn-terraform-plan/README.md) — [export notes](learn-terraform-plan/EXPORT-NOTES.md)
 - [Apply Terraform configuration](learn-terraform-apply/README.md)
+- [Troubleshoot Terraform](learn-terraform-troubleshooting/README.md)
 - [Use Terraform input variables](learn-terraform-variables/README.md)
+- [Use Terraform outputs and an RDS-managed password](learn-terraform-outputs/README.md)
 
-The init and plan folders are sanitized learning snapshots. The plan folder includes redacted HCP run references and JSON exports as evidence; these references cannot be applied. Replace redacted settings before running configurations.
+The init and plan folders are sanitized learning snapshots. Use a separate HCP Terraform workspace and replace any placeholder settings before running the exercises. Keep credentials, local variable values, state, saved plans, and JSON plan exports out of Git.
 
 Practical Terraform learning projects, with their validation results and limitations documented.
 

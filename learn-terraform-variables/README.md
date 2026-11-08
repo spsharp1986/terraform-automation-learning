@@ -22,7 +22,11 @@ each run needs a value. The earlier plan failed because the variable file was
 named `terraform.auto.tvars`. The current local file is named
 `terraform.auto.tfvars`. Terraform auto-loads files ending in `.auto.tfvars`
 or `.auto.tfvars.json`. For example, a local `terraform.auto.tfvars` could
-contain:
+contain the following example value. Terraform also loads `terraform.tfvars`
+and `terraform.tfvars.json` automatically in the root module directory. For
+local CLI runs, auto-loaded files are read in lexical order after the
+conventional files. Explicit CLI `-var` and `-var-file` options take
+precedence over automatic files, environment variables, and defaults.
 
 ```hcl
 ec2_instance_type = "t2.micro"
@@ -54,7 +58,9 @@ terraform show variables-review.tfplan
 `-out` sets the filename. To apply an approved saved plan, run
 `terraform apply variables-review.tfplan`. With HCP Terraform remote execution
 and Terraform CLI 1.6 or later, the local file refers to a plan stored in the
-same HCP Terraform workspace. Keep local saved plans and remote plan references
+same HCP Terraform workspace. This workflow requires a workspace without a
+linked VCS repository. In a VCS-linked workspace, review and approve the run
+in HCP Terraform. Keep saved plans, remote references, and plan JSON exports
 out of Git. Use the `.tfplan` suffix even though Terraform also accepts names
 without an extension.
 
@@ -62,14 +68,22 @@ without an extension.
 
 ### AWS authentication for remote runs
 
-For OIDC, configure an AWS IAM OIDC identity provider for HCP Terraform and an
-IAM role with the permissions needed by the exercise. Scope its trust policy
-to the expected token audience and the HCP organisation, project, workspace,
-and run phase. In HCP Terraform, set `TFC_AWS_PROVIDER_AUTH=true` and
-`TFC_AWS_RUN_ROLE_ARN` to the IAM role ARN as **environment variables**.
-HCP Terraform uses the workload identity token to obtain short-lived AWS
-credentials for the remote run. Local AWS CLI credentials are separate from
-the remote runner's credentials.
+In AWS IAM, register `https://app.terraform.io` as the OIDC provider for the
+standard HCP Terraform hostname. Allow `sts:AssumeRoleWithWebIdentity` and
+require the expected audience (`aws.workload.identity` by default). Scope
+the subject to `organization:<org>:project:<project>:workspace:<workspace>:run_phase:<phase>`
+with the exact workspace identity. If using separate roles, restrict each
+trust policy to its corresponding `plan` or `apply` phase and grant only the
+AWS permissions that phase needs.
+
+In HCP Terraform, set `TFC_AWS_PROVIDER_AUTH=true` and
+`TFC_AWS_RUN_ROLE_ARN` to the run role ARN as **environment variables**.
+Set `TFC_AWS_PLAN_ROLE_ARN` and `TFC_AWS_APPLY_ROLE_ARN` instead of the
+shared run role when using separate roles for both phases. Remove static
+AWS access-key environment variables from that workspace when switching to
+OIDC. HCP Terraform exchanges its identity token for short-lived AWS
+credentials during the run. `terraform login` authenticates the CLI to HCP
+Terraform, and a local AWS login applies to local execution.
 
 [HashiCorp's AWS OIDC setup guide](https://developer.hashicorp.com/terraform/cloud-docs/dynamic-provider-credentials/aws-configuration)
 

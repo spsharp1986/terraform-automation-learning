@@ -1,5 +1,5 @@
 # Downloaded Terraform providers and modules
-**/.terraform/*
+.terraform/
 
 # State files may contain sensitive information
 *.tfstate
@@ -8,13 +8,21 @@
 
 # Saved plans and crash logs
 *.tfplan
+*.tfplan.*
 tfplan
+tfplan-*
+tfplan.*
 crash.log
 crash.*.log
 
 # Local variable values and credentials
 *.tfvars
 *.tfvars.json
+*.tvars
+*.tvars.json
+.aws/
+.terraformrc
+terraform.rc
 .env
 .env.*
 *.pem

@@ -1,1 +1,0 @@
-secret_key = "REDACTED_TUTORIAL_VALUE"
