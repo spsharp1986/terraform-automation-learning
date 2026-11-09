@@ -1,0 +1,29 @@
+{
+  "terraform_version": "1.17.1",
+  "resource_changes": [
+    {
+      "resource_type": "aws_s3_bucket",
+      "actions": [
+        "no-op"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "random_pet",
+      "actions": [
+        "no-op"
+      ],
+      "count": 1
+    }
+  ],
+  "resource_drift": [
+    {
+      "resource_type": "aws_s3_bucket",
+      "actions": [
+        "update"
+      ],
+      "count": 1
+    }
+  ],
+  "output_changes": {}
+}

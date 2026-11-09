@@ -10,6 +10,7 @@ Terraform course exercises:
 - [Use Terraform input variables](learn-terraform-variables/README.md)
 - [Use Terraform outputs and an RDS-managed password](learn-terraform-outputs/README.md)
 - [Manage Terraform and provider versions](learn-terraform-versions/README.md)
+- [Lock and upgrade Terraform providers](learn-terraform-provider-versioning/README.md)
 
 The init and plan folders are sanitized learning snapshots. Use a separate HCP Terraform workspace and replace any placeholder settings before running the exercises. Keep credentials, local variable values, state, saved plans, and JSON plan exports out of Git.
 

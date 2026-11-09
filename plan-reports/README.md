@@ -14,6 +14,9 @@ cannot be applied.
 | Outputs | [Add outputs](outputs-with-values.json) | Create the same 49 resources and add three outputs |
 | Outputs | [Sensitive outputs](outputs-sensitive.json) | Create the same 49 resources and add five outputs, two marked sensitive |
 | Versions | [Version update](versions-update.json) | Create two resources and add two outputs |
+| Provider versioning | [Initial plan](provider-versioning-initial.json) | Create an S3 bucket and a random name |
+| Provider versioning | [Upgrade plan](provider-versioning-upgrade.json) | No planned resource changes. One bucket drift entry |
+| Provider versioning | [Final plan](provider-versioning-final.json) | No planned resource changes. One bucket drift entry |
 
 The reports consolidate archived copies with the same visible plan structure.
 Standalone HCP run references contain pointers to remote runs. They are
