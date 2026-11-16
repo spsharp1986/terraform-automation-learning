@@ -1,0 +1,71 @@
+{
+  "terraform_version": "1.17.1",
+  "resource_changes": [
+    {
+      "resource_type": "aws_s3_bucket",
+      "actions": [
+        "no-op"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "aws_s3_bucket_acl",
+      "actions": [
+        "no-op"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "aws_s3_bucket_ownership_controls",
+      "actions": [
+        "no-op"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "aws_s3_bucket_public_access_block",
+      "actions": [
+        "no-op"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "aws_s3_object",
+      "actions": [
+        "delete",
+        "create"
+      ],
+      "count": 3
+    },
+    {
+      "resource_type": "aws_s3_object",
+      "actions": [
+        "no-op"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "random_pet",
+      "actions": [
+        "no-op"
+      ],
+      "count": 5
+    }
+  ],
+  "output_changes": {
+    "bucket_arn": {
+      "actions": [
+        "no-op"
+      ],
+      "value": "[REDACTED]",
+      "sensitive": false
+    },
+    "bucket_name": {
+      "actions": [
+        "no-op"
+      ],
+      "value": "[REDACTED]",
+      "sensitive": false
+    }
+  }
+}

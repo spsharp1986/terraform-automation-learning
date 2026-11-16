@@ -1,0 +1,21 @@
+{
+  "terraform_version": "1.17.1",
+  "resource_changes": [
+    {
+      "resource_type": "random_pet",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    }
+  ],
+  "output_changes": {
+    "bucket_name": {
+      "actions": [
+        "create"
+      ],
+      "value": "[REDACTED]",
+      "sensitive": false
+    }
+  }
+}

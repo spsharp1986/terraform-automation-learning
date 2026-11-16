@@ -26,3 +26,13 @@ The historical outputs lesson used a database username and password as
 Terraform inputs. The [published outputs lesson](../learn-terraform-outputs/README.md)
 uses an RDS-managed master password. These reports document planned changes
 and do not record an apply result.
+
+## Resource targeting
+
+| Report | Planned actions |
+| --- | --- |
+| [Initial](targeting-init.json) | 13 additions |
+| [Length update](targeting-length-update.json) | 13 additions |
+| [Resource target](targeting-target.json) | One random resource addition |
+| [Module target](targeting-target-module.json) | Five additions including the upstream random name |
+| [Final full plan](targeting-final.json) | Three object replacements and ten unchanged resources |
