@@ -1,0 +1,14 @@
+{
+  "terraform_version": "1.17.1",
+  "resource_changes": [
+    {
+      "resource_type": "docker_container",
+      "actions": [
+        "update"
+      ],
+      "count": 1,
+      "importing": true
+    }
+  ],
+  "output_changes": {}
+}

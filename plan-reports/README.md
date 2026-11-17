@@ -42,3 +42,10 @@ and do not record an apply result.
 Six [state lesson reports](../learn-terraform-state/README.md#plan-evidence)
 cover initial creation, an unchanged follow-up, replacement, a second
 configuration, and two plans that proposed an instance deletion.
+
+## Importing a Docker container
+
+- [Initial import plan](import-initial.json)
+- [Simplified configuration plan](import-simplified.json)
+
+Both propose one container import with an in-place update.

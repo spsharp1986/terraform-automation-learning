@@ -24,3 +24,5 @@ Practical Terraform learning projects, with their validation results and limitat
 - [Target Terraform resources](learn-terraform-resource-targeting/README.md)
 
 - [Manage resources in Terraform state](learn-terraform-state/README.md)
+
+- [Import existing infrastructure](learn-terraform-import/README.md)
