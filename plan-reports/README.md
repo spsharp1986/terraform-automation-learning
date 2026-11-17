@@ -36,3 +36,9 @@ and do not record an apply result.
 | [Resource target](targeting-target.json) | One random resource addition |
 | [Module target](targeting-target-module.json) | Five additions including the upstream random name |
 | [Final full plan](targeting-final.json) | Three object replacements and ten unchanged resources |
+
+## State management
+
+Six [state lesson reports](../learn-terraform-state/README.md#plan-evidence)
+cover initial creation, an unchanged follow-up, replacement, a second
+configuration, and two plans that proposed an instance deletion.

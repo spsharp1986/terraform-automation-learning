@@ -1,0 +1,28 @@
+{
+  "terraform_version": "1.17.1",
+  "resource_changes": [
+    {
+      "resource_type": "aws_instance",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    }
+  ],
+  "output_changes": {
+    "instance_id": {
+      "actions": [
+        "create"
+      ],
+      "value": "[REDACTED]",
+      "sensitive": false
+    },
+    "public_ip": {
+      "actions": [
+        "create"
+      ],
+      "value": "[REDACTED]",
+      "sensitive": false
+    }
+  }
+}

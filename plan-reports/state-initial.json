@@ -1,0 +1,49 @@
+{
+  "terraform_version": "1.17.1",
+  "resource_changes": [
+    {
+      "resource_type": "aws_instance",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    },
+    {
+      "resource_type": "aws_security_group",
+      "actions": [
+        "create"
+      ],
+      "count": 1
+    }
+  ],
+  "output_changes": {
+    "aws_region": {
+      "actions": [
+        "create"
+      ],
+      "value": "[REDACTED]",
+      "sensitive": false
+    },
+    "instance_id": {
+      "actions": [
+        "create"
+      ],
+      "value": "[REDACTED]",
+      "sensitive": false
+    },
+    "public_ip": {
+      "actions": [
+        "create"
+      ],
+      "value": "[REDACTED]",
+      "sensitive": false
+    },
+    "security_group": {
+      "actions": [
+        "create"
+      ],
+      "value": "[REDACTED]",
+      "sensitive": false
+    }
+  }
+}

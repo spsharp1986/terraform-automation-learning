@@ -22,3 +22,5 @@ Practical Terraform learning projects, with their validation results and limitat
 - Secure media lifecycle framework: a modular Terraform reconstruction of the secure media storage, processing and delivery architecture I originally designed for an online education client. The framework is currently stored separately. Optional stages are disabled by default; this implementation has not been live-deployed.
 
 - [Target Terraform resources](learn-terraform-resource-targeting/README.md)
+
+- [Manage resources in Terraform state](learn-terraform-state/README.md)
